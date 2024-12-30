@@ -23,7 +23,7 @@ const Form = () => {
                     </div>
 
                     {/* Email */}
-                    <div className='flex justify-between'>
+                    <div className='flex md:flex-row flex-col justify-center md:justify-between'>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                                 * Email
@@ -39,7 +39,7 @@ const Form = () => {
                         </div>
 
                         {/* Phone Number */}
-                        <div>
+                        <div className='mt-3 md:mt-0'>
                             <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
                                 * Phone Number
                             </label>
@@ -69,14 +69,14 @@ const Form = () => {
                     </div>
 
                     {/* Submit Button */}
-                    <div className='flex items-center'>
+                    <div className='flex flex-col sm:flex-row items-center'>
                         <button
                             type="submit"
                             className="bg-sky-200 text-blue-950 text-[12px] py-3 px-8 rounded-md hover:bg-[#8067bd] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 transition duration-200"
                         >
                             Submit
                         </button>
-                        <p className='text-[12px] ml-4'>
+                        <p className='text-[12px] ml-4 mt-2 sm:mt-0'>
                             By clicking the button you agree to the <Link href={"/"} className='underline text-blue-600'> Privacy Policy </Link>
                             and  <Link href={"/"} className='underline text-blue-600'>Terms of Service</Link>.
                         </p>

@@ -12,12 +12,12 @@ import Link from "next/link"
 const Doctors = () => {
     return (
         <div className="mt-12 p-8">
-            <p className="text-lg text-blue-700">OUR DOCTORS</p>
-            <h1 className="text-5xl text-blue-950 mt-4">Trust the professionals</h1>
+            <p className="md:text-lg text-sm text-blue-700">OUR DOCTORS</p>
+            <h1 className="md:text-5xl text-3xl text-blue-950 mt-4">Trust the professionals</h1>
 
             <div className="flex flex-wrap justify-center mt-12 p-8">
                 <Carousel>
-                    <CarouselPrevious />
+                    <CarouselPrevious className="hidden md:block"/>
                     <CarouselContent className="flex justify-around px-4">
                         {Doctors_data.map((elem, index) => (
                             <CarouselItem key={index} className="basis-1/3 flex flex-col m-4">
@@ -34,7 +34,7 @@ const Doctors = () => {
                         ))}
                     </CarouselContent>
 
-                    <CarouselNext />
+                    <CarouselNext className="hidden md:block"/>
                 </Carousel>
 
             </div>

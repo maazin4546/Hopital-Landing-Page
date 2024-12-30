@@ -5,14 +5,14 @@ import React from 'react'
 const Brands = () => {
     return (
         <div>
-            <div className='text-center pt-20'>
-                <p className='text-xl text-blue-700'>OUR ADVANTAGES</p>
-                <h1 className='text-6xl my-8 text-blue-950'>Good vision for many years</h1>
+            <div className='text-center md:pt-20 pt-14'>
+                <p className='md:text-xl text-sm text-blue-700'>OUR ADVANTAGES</p>
+                <h1 className='md:text-6xl text-4xl md:my-8 my-4 text-blue-950'>Good vision for many years</h1>
             </div>
 
             <div className='flex flex-wrap justify-around items-center py-6'>
                 {brands_data.map((elem, index) => (
-                    <div key={index} className='flex items-center'>
+                    <div key={index} className='flex flex-col m-4 md:m-0 md:flex-row md:justify-center md:p-0 justify-between items-center'>
                         <Image
                             src={elem.imgUrl}
                             width={80}

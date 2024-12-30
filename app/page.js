@@ -4,7 +4,6 @@ import Brands from '@/components/Brands'
 import Doctors from '@/components/Doctors'
 import Features from '@/components/Features'
 import Footer from '@/components/Footer'
-import Form from '@/components/Form'
 import GoToTop from '@/components/GoToTop'
 import Main from '@/components/Main'
 import MakeAppointment from '@/components/MakeAppointment'
@@ -17,7 +16,7 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <SecondNavbar />
 
@@ -32,9 +31,7 @@ const page = () => {
 
       <Main />
       <Brands />
-      {/* <GoToTop/> */}
       <AboutClinic />
-      <Form />
       <Services />
       <MakeAppointment/>  
       <Features/>
@@ -42,6 +39,7 @@ const page = () => {
       <Doctors/>
       <ApppointmenBook/>
       <Footer/>
+      <GoToTop/>
       <SecondFooter/>
     </div>
   )
